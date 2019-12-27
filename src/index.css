@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.fav-item {
+  background: #ccc;
+  width: 100%;
+  padding: 20px;
+}
+
+.list-item {
+  background: #ccc;
+  width: 100%;
+  padding: 20px;
+}
