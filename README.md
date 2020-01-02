@@ -1,54 +1,25 @@
-﻿## Sobre
+﻿## Exercício Final - 10/01/2020
 
-Olá! Este projeto consiste em um currículo simples desenvolvido em javascript (ES6) puro, sem utilizar bibliotecas ou frameworks. 
+Criar uma aplicação de ToDo List onde seja possível:
 
+- Adicionar itens à uma lista
+- Marcar itens como concluídos
+- Marcar itens como favoritos
 
-## Tecnologias
- - HTML5
- - CSS3
- - JavaScript (ES6+)
- - [Webpack](https://webpack.js.org/)  `4.30.0` utilizado para compilar os módulos JavaScript
- - [ESLint](https://eslint.org/) `5.16.0` para auxiliar nas regras de escrita de código JavaScript
- - [Prettier](https://prettier.io/) `1.14.2` para auxiliar na indentação automática durante o desenvolvimento
--	[Yarn](https://yarnpkg.com/pt-BR/) `1.15.2` gerenciador de pacotes utilizado para instalação de dependências
+A aplicação deve conter duas sessões/páginas, uma para a lista de itens, outra para a lista de favoritos (caso crie páginas separadas, leve em consideração criar um menu de acesso às páginas).
 
-## Metodologia de Desenvolvimento
+O footer da aplicação deve exibir a contagens de itens (itens, favoritos, concluídos, não-concluídos)
 
-Neste projeto utilizei de uma abordagem modular de desenvolvimento, que consiste basicamente em separar o código em componentes, semelhante ao que acontece quando utilizamos React, por exemplo. Nesse modelo de desenvolvimento o código tende a ficar um pouco mais complexo, porém muito mais escalável e reutilizável. 
+Utilize à arquitetura mostrada na aula para criação das `pages/components/services.`
 
-## Como executar
+Além dos requisitos acima, leve em consideração também:
 
-##### 1 - Clone do repositório:
-```
-$ git clone https://github.com/lucasjcs/curriculo
-```
-##### 2 - Instale as dependências:
-```
-$ cd curriculo 
-$ npm install ou yarn 
-```
-##### 3 - Execute o projeto:
-```
-$ npm start ou yarn start
-```
+- Utilização de template literals para retorno de views
+- Estilização de componentes/páginas pelo javascript
+- Utilização de estado global utilizando o window (utilize o estado da aplicação na manipulação do objeto de itens/favoritos)
+- Manipulação de objetos de itens/favoritos
 
+**Extra**:
+Criar dois temas, um claro e outro escuro, onde o usuário possa escolher entre um e outro.
 
-## Estrutura do Git
-
-#### Branches
-
--   `dev`: branch de desenvolvimento em execução.
-    
--   `master`: branch de produção, onde fica a versão pronta para build.
-
-#### Commits
--	`feat`: entrega de funcionalidades novas
--	`fix`: correções realizadas no código
--	`config`: desenvolvimento de configurações
-
-## Observação
-
-Para melhor legibilidade do código, recomendo que utilize o VSCode e instale a extensão [ES6 String HTML](ES6%20String%20HTML), com ela é possível visualizar com syntax highlight as template literals.
-
-## Licence
-Este projeto foi desenvolvido com  :heart: por  [@lucasjcs](https://github.com/lucasjcs) sob a licença [MIT](https://opensource.org/licenses/MIT).
+`Dica`: utilize o estado global para armazenar o tema escolhido, conforme a escolha do usuário, armazene esta informação no `local storage` e toda vez que a aplicação inicializar, verifique se já existe a informação de tema lá, caso já exista, atribua este valor à variável global (estado) responsável pelo controle de temas.
